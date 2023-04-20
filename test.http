@@ -1,0 +1,23 @@
+GET http://localhost:3000/users
+
+###
+POST http://localhost:3000/users HTTP/1.1
+content-type: application/json
+
+{
+  "name": "Gabriel",
+  "email": "gabriel.fratelli99@gmail.com",
+  "password": "gabriel123"
+}
+###
+
+PATCH http://localhost:3000/users/64413789aed761de0f022f1a HTTP/1.1
+content-type: application/json
+
+{
+  "name": "Gabriel Fratelli"
+}
+
+###
+
+DELETE http://localhost:3000/users/64413789aed761de0f022f1a HTTP/1.1
